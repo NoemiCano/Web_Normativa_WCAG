@@ -1,13 +1,19 @@
+.root{
+  --background__color: #D9DBFF; 
+  --primary__color: #2D55A6; 
+
+}
+
 nav{
     display: flex;
 }
 
-ul {
-  list-style-type: none;
+ul, li{
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
-  list-style: none;
+.img__logo{
+  width: 50px;
 }
