@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 1 y 2</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
     <nav>
         <div class="logo">
             <img class="logo__img" src="images/library-outline-svgrepo-com.svg" alt="logo de la libreria">
             <p class="logo__text">Thor-Menta Library</p>
         </div>
-        <li>Inicio</li>
-        <li>Sobre Nosotros</li>
-        <li>Libros Destacados</li>
-        <li>Contacto</li>
+
+        <div class="menu__wrapper">
+            <button class="menu__icon-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+                <img class="menu__icon" src="images/menu.svg" alt="">
+            </button>
+
+            <ul class="menu__list" id="menuList">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#destacados">Libros Destacados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

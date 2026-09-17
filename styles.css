@@ -18,6 +18,11 @@ body{
 
 nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: #E6EBFC;
 }
 
 ul, li{
@@ -28,12 +33,64 @@ ul, li{
 
 .logo{
   display: flex;
+  align-items: center;
+  padding-left: 15px;
+  gap: 15px;
 }
 
 .logo__img{
-  width: 50px;
+  width: 35px;
 }
 
 .logo__text{
   color: var(--primary__color);
+}
+
+.menu__wrapper{
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__icon{
+  padding-right: 15px;
+  height: 35px;
+}
+
+.menu__list {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary__color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-top: 8px;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+.menu__list.active {
+    display: block;
+}
+
+.menu__list li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 15px;
+  color: var(--background__color);
+  cursor: pointer;
+}
+
+.menu__list li a:focus-visible,
+.menu__list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.menu__icon-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
