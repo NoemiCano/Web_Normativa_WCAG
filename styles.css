@@ -94,3 +94,24 @@ ul, li{
     display: flex;
     align-items: center;
 }
+
+.reading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reading_title{
+  margin-top: 15px;
+}
+
+.reading__box{
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+}
+
+.read__img {
+  width: 250px;
+}
